@@ -4,8 +4,9 @@ import torch
 
 class mnist():
   def __init__(self, train):
-    path = "src/data/raw/"
+    path = "data/raw/"
     filepaths = os.listdir(path)
+    print(path, filepaths)
 
     if train:
       train_files = [path + i for i in filepaths if i.startswith("train")]

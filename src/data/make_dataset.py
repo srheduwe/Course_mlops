@@ -4,7 +4,7 @@ import torch
 
 class mnist():
   def __init__(self, train):
-    path = "data/raw/"
+    path = "src/data/raw/"
     filepaths = os.listdir(path)
 
     if train:
